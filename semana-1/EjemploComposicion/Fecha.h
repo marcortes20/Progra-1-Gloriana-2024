@@ -1,4 +1,4 @@
-#include"sstream"
+
 class Fecha {
 private:
 	int dia;     // 1-31 dependiendo del mes
@@ -46,7 +46,7 @@ public:
 		
 	string toString(){
 		std::stringstream out; 
-		out<<this->dia<<"/"<<this->mes<<"/"<<this->annio;
+		out<<this->dia<<"-"<<this->mes<<"-"<<this->annio;
 		return out.str();
 		} 
 };
